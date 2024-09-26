@@ -1,0 +1,7 @@
+# OpenFAST
+*.out
+*.outb
+*.sum
+*.ech
+*.bts
+*.dbg
