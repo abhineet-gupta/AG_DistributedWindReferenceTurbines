@@ -1,0 +1,72 @@
+------- ELASTODYN V1.00.* TOWER INPUT FILE -------------------------------------
+---------------------- HH38 tower from XantM26_tower.xlsm-------------------
+---------------------- TOWER PARAMETERS ----------------------------------------
+         28   NTwInpSt    - Number of input stations to specify tower geometry
+          1   TwrFADmp(1) - Tower 1st fore-aft mode structural damping ratio (%)
+          3   TwrFADmp(2) - Tower 2nd fore-aft mode structural damping ratio (%)
+          1   TwrSSDmp(1) - Tower 1st side-to-side mode structural damping ratio (%)
+          3   TwrSSDmp(2) - Tower 2nd side-to-side mode structural damping ratio (%)
+---------------------- TOWER ADJUSTMUNT FACTORS --------------------------------
+          1   FAStTunr(1) - Tower fore-aft modal stiffness tuner, 1st mode (-)
+          1   FAStTunr(2) - Tower fore-aft modal stiffness tuner, 2nd mode (-)
+          1   SSStTunr(1) - Tower side-to-side stiffness tuner, 1st mode (-)
+          1   SSStTunr(2) - Tower side-to-side stiffness tuner, 2nd mode (-)
+          1   AdjTwMa     - Factor to adjust tower mass density (-)
+          1.0   AdjFASt     - Factor to adjust tower fore-aft stiffness (-)
+          1.0   AdjSSSt     - Factor to adjust tower side-to-side stiffness (-)
+---------------------- DISTRIBUTED TOWER PROPERTIES ----------------------------
+  HtFract       TMassDen         TwFAStif       TwSSStif            TwGJStif         TwEAStif           TwFAIner          TwSSIner      TwFAcgOf    TwSScgOf
+   (-)           (kg/m)           (Nm^2)         (Nm^2)             [Nm^2]            [N]               [kg m]            [kg m]           [m]       [m]
+0.0000        11446.37      4.72726E+09        4.72726E+09        3.64667E+09        1.15432E+10        1.8646E+02        1.8646E+02        0        0
+0.0014        11446.37      4.72726E+09        4.72726E+09        3.64667E+09        1.15432E+10        1.8646E+02        1.8646E+02        0        0
+0.0014        446.37        4.72726E+09        4.72726E+09        3.64667E+09        1.15432E+10        1.8646E+02        1.8646E+02        0        0
+0.0556        422.08        3.99646E+09        3.99646E+09        3.08306E+09        1.09149E+10        1.5763E+02        1.5763E+02        0        0
+0.0556        338.06        3.20842E+09        3.20842E+09        2.47506E+09        8.74199E+09        1.2655E+02        1.2655E+02        0        0
+0.1111        319.76        2.71513E+09        2.71513E+09        2.09460E+09        8.26900E+09        1.0709E+02        1.0709E+02        0        0
+0.1667        302.13        2.29045E+09        2.29045E+09        1.76692E+09        7.81306E+09        9.0343E+01        9.0343E+01        0        0
+0.2222        285.19        1.92647E+09        1.92647E+09        1.48606E+09        7.37499E+09        7.5986E+01        7.5986E+01        0        0
+0.2778        268.96        1.61568E+09        1.61568E+09        1.24646E+09        6.95519E+09        6.3728E+01        6.3728E+01        0        0
+0.3319        253.06        1.34589E+09        1.34589E+09        1.03826E+09        6.54411E+09        5.3086E+01        5.3086E+01        0        0
+0.3319        4653.06       1.34589E+09        1.34589E+09        1.03826E+09        6.54411E+09        5.3086E+01        5.3086E+01        0        0
+0.3347        4653.06       1.34589E+09        1.34589E+09        1.03826E+09        6.54411E+09        5.3086E+01        5.3086E+01        0        0
+0.3348        253.06        1.34589E+09        1.34589E+09        1.03826E+09        6.54411E+09        5.3086E+01        5.3086E+01        0        0
+0.3889        237.96        1.11894E+09        1.11894E+09        8.63258E+08        6.15354E+09        4.4135E+01        4.4135E+01        0        0
+0.4444        224.01        9.33597E+08        9.33597E+08        7.20203E+08        5.79281E+09        3.6824E+01        3.6824E+01        0        0
+0.5000        210.87        7.78708E+08        7.78708E+08        6.00718E+08        5.45319E+09        3.0715E+01        3.0715E+01        0        0
+0.5556        198.58        6.50412E+08        6.50412E+08        5.01668E+08        5.13509E+09        2.5654E+01        2.5654E+01        0        0
+0.6111        187.16        5.44446E+08        5.44446E+08        4.20001E+08        4.83993E+09        2.1475E+01        2.1475E+01        0        0
+0.6652        176.42        4.56141E+08        4.56141E+08        3.51802E+08        4.56222E+09        1.7992E+01        1.7992E+01        0        0
+0.6653        3516.42       4.56141E+08        4.56141E+08        3.51802E+08        4.56222E+09        1.7992E+01        1.7992E+01        0        0
+0.6681        3516.42       4.56141E+08        4.56141E+08        3.51802E+08        4.56222E+09        1.7992E+01        1.7992E+01        0        0
+0.6667        176.42        4.56141E+08        4.56141E+08        3.51802E+08        4.56222E+09        1.7992E+01        1.7992E+01        0        0
+0.7222        166.73        3.84888E+08        3.84888E+08        2.96914E+08        4.31152E+09        1.5181E+01        1.5181E+01        0        0
+0.7778        158.35        3.29672E+08        3.29672E+08        2.54397E+08        4.09492E+09        1.3003E+01        1.3003E+01        0        0
+0.8333        151.14        2.86839E+08        2.86839E+08        2.21198E+08        3.90856E+09        1.1314E+01        1.1314E+01        0        0
+0.8889        145.25        2.54562E+08        2.54562E+08        1.96298E+08        3.75611E+09        1.0041E+01        1.0041E+01        0        0
+0.9444        140.90        2.32232E+08        2.32232E+08        1.79229E+08        3.64365E+09        9.1600E+00        9.1600E+00        0        0
+1.0000        138.70        2.54562E+08        2.54562E+08        1.96298E+08        3.75611E+09        1.0041E+01        1.0041E+01        0        0
+---------------------- TOWER FORE-AFT MODE SHAPES ------------------------------
+>>>>>>>>>>TODO FROM HERE DOWN
+      0.664   TwFAM1Sh(2) - Mode 1, coefficient of x^2 term
+      0.106   TwFAM1Sh(3) -       , coefficient of x^3 term
+     -0.295   TwFAM1Sh(4) -       , coefficient of x^4 term
+      1.376   TwFAM1Sh(5) -       , coefficient of x^5 term
+     -0.851   TwFAM1Sh(6) -       , coefficient of x^6 term
+    -12.615   TwFAM2Sh(2) - Mode 2, coefficient of x^2 term
+     16.819   TwFAM2Sh(3) -       , coefficient of x^3 term
+    -46.985   TwFAM2Sh(4) -       , coefficient of x^4 term
+     77.266   TwFAM2Sh(5) -       , coefficient of x^5 term
+    -33.485   TwFAM2Sh(6) -       , coefficient of x^6 term
+---------------------- TOWER SIDE-TO-SIDE MODE SHAPES --------------------------
+      0.664   TwSSM1Sh(2) - Mode 1, coefficient of x^2 term
+      0.106   TwSSM1Sh(3) -       , coefficient of x^3 term
+     -0.295   TwSSM1Sh(4) -       , coefficient of x^4 term
+      1.376   TwSSM1Sh(5) -       , coefficient of x^5 term
+     -0.851   TwSSM1Sh(6) -       , coefficient of x^6 term
+    -12.615   TwSSM2Sh(2) - Mode 2, coefficient of x^2 term
+     16.819   TwSSM2Sh(3) -       , coefficient of x^3 term
+    -46.985   TwSSM2Sh(4) -       , coefficient of x^4 term
+     77.266   TwSSM2Sh(5) -       , coefficient of x^5 term
+    -33.485   TwSSM2Sh(6) -       , coefficient of x^6 term
+
+
