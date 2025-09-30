@@ -57,10 +57,13 @@ True                   FLookup     - Flag to indicate whether a lookup for f' wi
 3                      InCol_Cd    - The column in the airfoil tables that contains the drag coefficient (-)
 4                      InCol_Cm    - The column in the airfoil tables that contains the pitching-moment coefficient; use zero if there is no Cm column (-)
 0                      InCol_Cpmin - The column in the airfoil tables that contains the Cpmin coefficient; use zero if there is no Cpmin column (-)
-3                      NumAFfiles  - Number of airfoil files used (-)
-"Airfoils/Polars_S823.dat" AFNames - Airfoil file names (NumAFfiles lines) (quoted strings)
-"Airfoils/Polars_S822.dat"
-"Airfoils/TailPlate_with_Cm.dat"
+6                      NumAFfiles  - Number of airfoil files used (-)
+"AeroData/TailPlate.dat"    AFNames            - Airfoil file names (NumAFfiles lines) (quoted strings)
+"AeroData/Airfoil_1.dat"
+"AeroData/Airfoil_2.dat"
+"AeroData/Airfoil_3.dat"
+"AeroData/Airfoil_4.dat"
+"AeroData/Airfoil_5.dat"
 ======  Rotor/Blade Properties  =====================================================================
 True                   UseBlCm     - Include aerodynamic pitching moment in calculations? (flag)
 "NREL15kW_AD_Blade.dat" ADBlFile(1) - Name of file containing distributed aerodynamic properties for Blade #1 (-)
@@ -91,28 +94,10 @@ False                  SumPrint    - Generate a summary file listing input optio
 0                      NTwOuts     - Number of tower node outputs [0 - 9] (-)
 0                      TwOutNd     - Tower nodes whose values will be output (-)
                        OutList     - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
-"RtFldCp"
-"RtFldCq"
-"RtFldCt"
-"RtFldPwr"
-"RtArea"
-"RtSkew"
-"RtSpeed"
-"RtTSR"
-"RtVAvgxh"
-"RtVAvgyh"
-"RtVAvgzh"
 END of input file (the word "END" must appear in the first 3 columns of this last OutList line)
 ====== Outputs for all blade stations (same ending as above for B1N1.... =========================== [optional section]
 1                      BldNd_BladesOut - Number of blades to output all node information at. Up to number of blades on turbine. (-)
 "All"                  BldNd_BlOutNd - Future feature will allow selecting a portion of the nodes to output. Not implemented yet. (-)
                        OutList_Nodal - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
-"Alpha"
-"Cl"
-"Cd"
-"Cm"
-"Fl"
-"Fd"
-"Vrel"
 END (the word "END" must appear in the first 3 columns of this last OutList line in the optional nodal output section)
 ====================================================================================================

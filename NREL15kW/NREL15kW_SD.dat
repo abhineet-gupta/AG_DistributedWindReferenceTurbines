@@ -5,20 +5,20 @@ False         		Echo         - Echo input data to <RootName>.ech (flag)
 default     		DT           - Communication interval for controllers (s) (or "default")
 ---------------------- PITCH CONTROL -------------------------------------------
 0             		PCMode       - Pitch control mode {0: none, 3: user-defined from routine PitchCntrl, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
-0.0        	   	TPCOn        - Time to enable active pitch control (s) [unused when PCMode=0]
+0.0          	   	TPCOn        - Time to enable active pitch control (s) [unused when PCMode=0]
 9999.9        		TPitManS(1)  - Time to start override pitch maneuver for blade 1 and end standard pitch control (s)
 9999.9        		TPitManS(2)  - Time to start override pitch maneuver for blade 2 and end standard pitch control (s)
 9999.9        		TPitManS(3)  - Time to start override pitch maneuver for blade 3 and end standard pitch control (s) [unused for 2 blades]
-2          		   PitManRat(1) - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 1 (deg/s)
+2          		    PitManRat(1) - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 1 (deg/s)
 2             		PitManRat(2) - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 2 (deg/s)
-2           		PitManRat(3) - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 3 (deg/s) [unused for 2 blades]
-0.0         		BlPitchF(1)  - Blade 1 final pitch for pitch maneuvers (degrees)
+2                 PitManRat(3) - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 3 (deg/s) [unused for 2 blades]
+0.0         	    BlPitchF(1)  - Blade 1 final pitch for pitch maneuvers (degrees)
 0.0           		BlPitchF(2)  - Blade 2 final pitch for pitch maneuvers (degrees)
 0.0           		BlPitchF(3)  - Blade 3 final pitch for pitch maneuvers (degrees) [unused for 2 blades]
 ---------------------- GENERATOR AND TORQUE CONTROL ----------------------------
-3            		VSContrl     - Variable-speed control mode {0: none, 1: simple VS, 3: user-defined from routine UserVSCont, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
-1            		GenModel     - Generator model {1: simple, 2: Thevenin, 3: user-defined from routine UserGen} (switch) [used only when VSContrl=0]
-86.4        		GenEff       - Generator efficiency [ignored by the Thevenin and user-defined generator models] (%)
+3            		  VSContrl     - Variable-speed control mode {0: none, 1: simple VS, 3: user-defined from routine UserVSCont, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
+1            		  GenModel     - Generator model {1: simple, 2: Thevenin, 3: user-defined from routine UserGen} (switch) [used only when VSContrl=0]
+86.4              GenEff       - Generator efficiency [ignored by the Thevenin and user-defined generator models] (%)
 True          		GenTiStr     - Method to start the generator {T: timed using TimGenOn, F: generator speed using SpdGenOn} (flag)
 True          		GenTiStp     - Method to stop the generator {T: timed using TimGenOf, F: when generator power = 0} (flag)
 9999.9        		SpdGenOn     - Generator speed to turn on the generator for a startup (HSS speed) (rpm) [used only when GenTiStr=False]
@@ -74,8 +74,8 @@ True          		GenTiStp     - Method to stop the generator {T: timed using TimG
 ---------------------- CABLE CONTROL ----------------------------------------
 0                      	CCmode      - Cable control mode {0- none, 4- user-defined from Simulink/Labview, 5- user-defineAfC_phased from Bladed-style DLL}
 ---------------------- BLADED INTERFACE ---------------------------------------- [used only with Bladed Interface]
-"libdiscon.dylib"  		DLL_FileName - Name/location of the dynamic library {.dll [Windows] or .so [Linux]} in the Bladed-DLL format (-) [used only with Bladed Interface]
-"DISCON.IN"   		DLL_InFile   - Name of input file sent to the DLL (-) [used only with Bladed Interface]
+"libdiscon_2.10.1.so"  		DLL_FileName - Name/location of the dynamic library {.dll [Windows] or .so [Linux]} in the Bladed-DLL format (-) [used only with Bladed Interface]
+"NREL15kW_DISCON.IN"   		DLL_InFile   - Name of input file sent to the DLL (-) [used only with Bladed Interface]
 "DISCON"      		DLL_ProcName - Name of procedure in DLL to be called (-) [case sensitive; used only with DLL Interface]
 default       		DLL_DT       - Communication interval for dynamic library (s) (or "default") [used only with Bladed Interface]
 false         		DLL_Ramp     - Whether a linear ramp should be used between DLL_DT time steps [introduces time shift when true] (flag) [used only with Bladed Interface]
