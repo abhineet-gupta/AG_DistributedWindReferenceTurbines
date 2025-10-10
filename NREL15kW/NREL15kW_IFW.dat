@@ -1,5 +1,5 @@
 ------- InflowWind v3.01.* INPUT FILE -------------------------------------------------------------------------
-FAST model of Bergey Excel 15 3-bladed upwind, 9m diameter turbine.
+Inflow wind file for NREL 15-kW turbine.
 ---------------------------------------------------------------------------------------------------------------
 False                  	Echo        - Echo input data to <RootName>.ech (flag)
 2                      	WindType    - switch for wind file type (1=steady; 2=uniform; 3=binary TurbSim FF; 4=binary Bladed-style FF; 5=HAWC format; 6=User defined; 7=native Bladed FF)

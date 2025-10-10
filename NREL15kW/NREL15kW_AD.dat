@@ -1,5 +1,5 @@
 ------- AERODYN INPUT FILE --------------------------------------------------------------------------
-Bergey Excel 15kW. 9m rotor diameter, with T7 blade.  Oct 19, 2017. Jeff Minnema Consulting.
+AeroDyn model of NREL-15kW turbine 
 ======  General Options  ============================================================================
 False                  Echo        - Echo the input to "<rootname>.AD.ech"? (flag)
 default                DTAero      - Time interval for aerodynamic calculations {or "default"} (s)
