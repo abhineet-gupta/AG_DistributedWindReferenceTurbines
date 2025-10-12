@@ -1,5 +1,5 @@
 ------- OpenFAST 4.1.2 INPUT FILE ------------------------------------------------
-NREL-15kW turbine
+NREL-15kW turbine: Version-2
 ---------------------- SIMULATION CONTROL --------------------------------------
 False               	Echo            - Echo input data to <RootName>.ech (flag)
 "FATAL"             	AbortLevel      - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"}

@@ -15,7 +15,7 @@ False         VelInterpCubic - Use cubic interpolation for velocity in time (fal
        31.0   RefHt          - Reference height for horizontal wind speed      (m)
         0.2   PLExp          - Power law exponent                              (-)
 ================== Parameters for Uniform wind file   [used only for WindType = 2] ============================
-"./Wind/ramp.txt"       FileName_Uni   - Filename of time series data for uniform wind field.      (-)
+"./Inflows/ramp.txt"       FileName_Uni   - Filename of time series data for uniform wind field.      (-)
        31.0   RefHt_Uni      - Reference height for horizontal wind speed                (m)
         5.8   RefLength      - Reference length for linear horizontal and vertical sheer (-)
 ================== Parameters for Binary TurbSim Full-Field files   [used only for WindType = 3] ==============
